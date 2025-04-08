@@ -1,4 +1,4 @@
-package algorithm.B_Arrays__TwoPointer.D_Prefix_sum.K_RadisusSubarrayAverages;
+package algorithm.P2_Arrays__TwoPointer.p4_Prefix_sum.p2090_K_Radius_Subarray_Averages;
 
 import java.util.Arrays;
 

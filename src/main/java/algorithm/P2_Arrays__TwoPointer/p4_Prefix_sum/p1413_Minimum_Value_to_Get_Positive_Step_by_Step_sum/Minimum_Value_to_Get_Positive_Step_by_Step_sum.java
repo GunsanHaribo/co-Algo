@@ -1,4 +1,4 @@
-package algorithm.B_Arrays__TwoPointer.D_Prefix_sum.Minimum_Value_to_Get_Positive_Step_by_Step_sum;
+package algorithm.P2_Arrays__TwoPointer.p4_Prefix_sum.p1413_Minimum_Value_to_Get_Positive_Step_by_Step_sum;
 
 public class Minimum_Value_to_Get_Positive_Step_by_Step_sum {
 

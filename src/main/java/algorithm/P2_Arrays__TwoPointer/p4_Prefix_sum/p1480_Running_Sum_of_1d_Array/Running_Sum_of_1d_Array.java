@@ -1,4 +1,4 @@
-package algorithm.B_Arrays__TwoPointer.D_Prefix_sum.Running_Sum_of_1d_Array;
+package algorithm.P2_Arrays__TwoPointer.p4_Prefix_sum.p1480_Running_Sum_of_1d_Array;
 
 import java.util.Arrays;
 

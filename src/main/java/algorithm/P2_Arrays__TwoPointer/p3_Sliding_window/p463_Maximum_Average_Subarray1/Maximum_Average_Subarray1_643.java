@@ -1,8 +1,6 @@
-package algorithm.B_Arrays__TwoPointer.C_Sliding_window.Maximum_Average_Subarray1_643;
+package algorithm.P2_Arrays__TwoPointer.p3_Sliding_window.p463_Maximum_Average_Subarray1;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.stream.Collectors;
 
 public class Maximum_Average_Subarray1_643 {
 

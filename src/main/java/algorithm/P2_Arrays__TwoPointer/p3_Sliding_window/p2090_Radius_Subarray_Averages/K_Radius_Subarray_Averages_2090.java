@@ -1,4 +1,4 @@
-package algorithm.B_Arrays__TwoPointer.C_Sliding_window.K_Radius_Subarray_Averages_2090;
+package algorithm.P2_Arrays__TwoPointer.p3_Sliding_window.p2090_Radius_Subarray_Averages;
 
 import java.util.Arrays;
 

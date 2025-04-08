@@ -1,4 +1,4 @@
-package algorithm.B_Arrays__TwoPointer.C_Sliding_window.Max_Consecutive_One3_1004;
+package algorithm.P2_Arrays__TwoPointer.p3_Sliding_window.p1004_Max_Consecutive_One3;
 
 public class Max_Consecutive_One3_1004 {
 
