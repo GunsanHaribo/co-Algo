@@ -1,0 +1,4 @@
+package algorithm.P2_Arrays__TwoPointer.p6_Bonus_problems.Prefix_sum.p303_Range_Sum_Query_Immutable;
+
+public class p303_Range_Sum_Query_Immutable {
+}

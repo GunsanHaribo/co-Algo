@@ -1,0 +1,4 @@
+package algorithm.P2_Arrays__TwoPointer.p6_Bonus_problems.Sliding_window.p1208_Get_Equal_Substrings_Within_Budget;
+
+public class p1208_Get_Equal_Substrings_Within_Budget {
+}
