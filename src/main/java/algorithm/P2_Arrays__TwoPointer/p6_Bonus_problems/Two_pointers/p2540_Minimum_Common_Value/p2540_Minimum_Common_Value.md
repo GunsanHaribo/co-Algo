@@ -37,3 +37,4 @@ Explanation: There are two common elements in the array 2 and 3 out of which 2 i
 3. 공통적으로 적용되는것은 min 비교
 
 ## 링크 
+https://leetcode.com/problems/minimum-common-value/submissions/1601562089

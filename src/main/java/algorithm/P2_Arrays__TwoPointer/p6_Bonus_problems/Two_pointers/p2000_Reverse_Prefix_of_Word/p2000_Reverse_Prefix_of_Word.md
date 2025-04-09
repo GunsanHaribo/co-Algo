@@ -33,3 +33,5 @@ Reverse the part of word from 0 to 3 (inclusive), the resulting string is "dcbae
 
 
 ## 링크
+
+https://leetcode.com/problems/reverse-prefix-of-word/submissions/1601561405
