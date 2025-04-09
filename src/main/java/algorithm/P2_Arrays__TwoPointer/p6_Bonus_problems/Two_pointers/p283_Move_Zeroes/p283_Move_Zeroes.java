@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class p283_Move_Zeroes {
     public static void main(String[] args) {
-        int[] nums = {1,2};
+        int[] nums = {1, 2};
         moveZeroes(nums);
         System.out.println(Arrays.toString(nums));
     }
@@ -13,11 +13,10 @@ public class p283_Move_Zeroes {
         int start = 0;
         for (int end = 0; end < nums.length; end++) {
             if (nums[end] != 0) {
-                if (start != end) {
-                    int temp = nums[start];
-                    nums[start] = nums[end];
-                    nums[end] = temp;
-                }
+                int temp = nums[start];
+                nums[start] = nums[end];
+                nums[end] = temp;
+
                 start++;
             }
         }
