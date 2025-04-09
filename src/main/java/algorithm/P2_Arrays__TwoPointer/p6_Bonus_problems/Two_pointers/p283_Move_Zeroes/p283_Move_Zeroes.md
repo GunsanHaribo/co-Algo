@@ -36,4 +36,4 @@ https://leetcode.com/problems/move-zeroes/submissions/1601586708
 
 
 ## 이해가 안되는 부분
-![img.png](img.png)
+해당 코드로 했을때 {1,2} -> {2,1}여야 통과되는 부분 이해 필요
