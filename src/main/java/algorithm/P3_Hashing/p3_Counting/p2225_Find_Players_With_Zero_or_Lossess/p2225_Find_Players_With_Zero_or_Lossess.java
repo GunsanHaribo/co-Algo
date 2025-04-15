@@ -1,0 +1,4 @@
+package algorithm.P3_Hashing.p3_Counting.p2225_Find_Players_With_Zero_or_Lossess;
+
+public class p2225_Find_Players_With_Zero_or_Lossess {
+}

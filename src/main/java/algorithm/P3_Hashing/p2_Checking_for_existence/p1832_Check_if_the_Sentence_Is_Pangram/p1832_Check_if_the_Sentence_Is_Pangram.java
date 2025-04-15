@@ -1,0 +1,4 @@
+package algorithm.P3_Hashing.p2_Checking_for_existence.p1832_Check_if_the_Sentence_Is_Pangram;
+
+public class p1832_Check_if_the_Sentence_Is_Pangram {
+}
