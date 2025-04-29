@@ -46,8 +46,6 @@ public class p88_Merged_Sorted_Array {
             totalPointer--;
         }
 
-        // num1 < 0일 경우 남은num2를 넣는다.
-        // num2 < 0일 경우 남은num1은 이미 정렬되어 있으니 패스.
         if (nums1Pointer < 0) {
             while (totalPointer >= 0) {
                 nums1[totalPointer] = nums2[nums2Pointer];

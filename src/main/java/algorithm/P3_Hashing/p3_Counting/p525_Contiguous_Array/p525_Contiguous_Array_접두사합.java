@@ -3,7 +3,7 @@ package algorithm.P3_Hashing.p3_Counting.p525_Contiguous_Array;
 import java.util.HashMap;
 import java.util.Map;
 
-public class p525_Contiguous_Array {
+public class p525_Contiguous_Array_접두사합 {
     public static void main(String[] args) {
         int[] nums = {0,1,1,1,1,1,0,0,0};
         int results = findMaxLength(nums);
