@@ -1,0 +1,4 @@
+package algorithm.P3_Hashing.p4_More_hashing_examples.p3_Longest_Substring_Without_Repeating_Characters;
+
+public class p3_Longest_Substring_Without_Repeating_Characters {
+}

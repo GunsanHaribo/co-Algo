@@ -1,0 +1,4 @@
+package algorithm.P3_Hashing.p4_More_hashing_examples.p2352_Equal_Row_and_Column_Pairs;
+
+public class p2352_Equal_Row_and_Column_Pairs {
+}
