@@ -38,4 +38,4 @@ map()은 사용 불가
 
 ## 링크
 
-https://leetcode.com/problems/jewels-and-stones/submissions/1621548480
+https://leetcode.com/problems/jewels-and-stones/submissions/1621549318
