@@ -1,0 +1,4 @@
+package algorithm.P3_Hashing.p5_Bonus_Problem.counting.p3005_Count_Elements_With_Maximum_Frequency;
+
+public class p3005_Count_Elements_With_Maximum_Frequency {
+}
