@@ -1,0 +1,4 @@
+package algorithm.P4_Heap.P4_4_Bounus_problems.p2336_Smallest_Number_in_Infinite_Set;
+
+public class p2336_Smallest_Number_in_Infinite_Set {
+}

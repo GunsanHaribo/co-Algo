@@ -1,0 +1,4 @@
+package algorithm.P4_Heap.P4_2_Heap_examples.p2208_Minimum_Operation_to_Have_Array_Sum;
+
+public class p2208_Minimum_Operation_to_Have_Array_Sum {
+}

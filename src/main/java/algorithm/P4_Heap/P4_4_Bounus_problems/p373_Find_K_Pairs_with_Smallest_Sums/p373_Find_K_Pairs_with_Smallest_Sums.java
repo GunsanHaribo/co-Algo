@@ -1,0 +1,4 @@
+package algorithm.P4_Heap.P4_4_Bounus_problems.p373_Find_K_Pairs_with_Smallest_Sums;
+
+public class p373_Find_K_Pairs_with_Smallest_Sums {
+}

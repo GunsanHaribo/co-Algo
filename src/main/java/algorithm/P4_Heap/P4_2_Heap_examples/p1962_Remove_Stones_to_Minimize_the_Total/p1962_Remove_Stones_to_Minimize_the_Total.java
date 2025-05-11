@@ -1,0 +1,4 @@
+package algorithm.P4_Heap.P4_2_Heap_examples.p1962_Remove_Stones_to_Minimize_the_Total;
+
+public class p1962_Remove_Stones_to_Minimize_the_Total {
+}
