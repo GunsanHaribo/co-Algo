@@ -24,7 +24,6 @@ public class p215_Kth_Largest_Element_in_an_Array {
             }
         }
 
-
         return heap.peek();
     }
 }
