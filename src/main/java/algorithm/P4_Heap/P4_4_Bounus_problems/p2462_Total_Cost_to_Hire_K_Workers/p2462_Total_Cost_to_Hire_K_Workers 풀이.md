@@ -1,4 +1,4 @@
-# 문제 
+# 문제 (회고 필요, 시간 복잡도 개선 필요)
 ~~~text
 정수 배열 costs가 주어집니다. costs[i]는 i번째 근로자를 고용하는 비용을 나타냅니다.
 
@@ -17,8 +17,8 @@
 ~~~
 
 ## 문제 분석 
-1. 미지 : 고용하는데 드는 총 비용
-2. 자료 : 정수배열 costs(근로자를 고용하는 비용), 정수 k - 고용세션, candidates - 
+1. 미지 : 고용하는데 드는 총 비용(최소)
+2. 자료 : 정수배열 costs(근로자를 고용하는 비용), 정수 k - 고용세션, candidates
 3. 조건 : 
 - 고용 세션 K, 세션별로 정확히 한 명의 근로자를 고용
 - candidates : 앞뒤 후보자
@@ -31,10 +31,13 @@
 Input: costs = [17,12,10,2,7,2,11,20,8], k = 3, candidates = 4
 Output: 11
 Explanation: We hire 3 workers in total. The total cost is initially 0.
+
 - In the first hiring round we choose the worker from [17,12,10,2,7,2,11,20,8]. The lowest cost is 2, and we break the tie by the smallest index, which is 3. 
 The total cost = 0 + 2 = 2.
+
 - In the second hiring round we choose the worker from [17,12,10,7,2,11,20,8]. 
 The lowest cost is 2 (index 4). The total cost = 2 + 2 = 4.
+
 - In the third hiring round we choose the worker from [17,12,10,7,11,20,8]. The lowest cost is 7 (index 3). The total cost = 4 + 7 = 11. 
 Notice that the worker with index 3 was common in the first and last four workers. # 7이 중복후보임을 확인 
   The total hiring cost is 11
@@ -49,4 +52,33 @@ Notice that the worker with index 3 was common in the first and last four worker
 
 #### 첫번째는 타임리미트에 걸림 -> 흐음... 어떻게 줄일 수 있을까?  
 - 굳이 다시 넣어다 뺼 이요가 있을까? 
+- 일단 다 넣어놓고 시작하자 
+- [17,12,10,2,7,2,11,20,8]
+- [17,12,10,7,11,20,8] -> [17,12,10,7], [11,20,8] -> 3 : index4(인덱스는 안중요혀)
+- [17,12,10,7,2,11,20,8] -> [17,12,10,7], [2,11,20,8] -> 2 : index4
+- [17,12,10,2,7,2,11,20,8] -> [17,12,10,2], [2,11,20,8] -> 1 : index3 - 비용이 같으면 인덱스가 더 적은 거 사용
+미리 들어간 수의 인덱스는 어떻게 할 것 인가?
+- 미리 들어간게 인덱스가 바뀌어가지고;; 한번에 넣으면 안된다. 
+- 두개로 나눠서 넣고 만약에 peek 이 같다면 앞에꺼 사용한다. 
+
+겹치는 수는 어떻게 할 것인가?
+- 만약에 겹치는 수가 있으면 어떻게 해야되나 : 둘 중 하나만 들어가야됨 
+- [17,12,10,7,11,20,8]  -> [17,12,10,7], [11,20,8] : 7이 빠지면,
+- [17,12,10,11,20,8] -> [17,12,10,11], [20,8] : 
+- [17,12,10,20,8] -> [17,12,10,20], [8] :  8이 빠집니다. 
+- [17,12,10,20] -> [17,12,10,20], [] :  candidate랑 == 이되면 그냥 여기서 뽑는다. 
+
+1. 2*candidate 부터 계속 초기화 
+2. 2*candidate >= 부터는 앞에 힙에서만 새로운 숫자가 들어가고, 뒤에 힙에는 새로운거 안들어간다. 비교만 한다.
+
+#### 하나의 큐 방법 
+겹치는 부분 처리하는게 힘들면, 그냥 tuple 넣어놓고 
+배열 만들어서 이 인덱스 들어갔는지 테스트를 합니다. 들어갔으면 다시 넣지 않는 방법으로
+- [17,12,10,2,7,2,11,20,8]
+- [17,12,10,7,2,11,20,8]
+- [17,12,10,7,11,20,8]
+
+
+
 ## 링크 
+https://leetcode.com/problems/total-cost-to-hire-k-workers/submissions/1632396350
