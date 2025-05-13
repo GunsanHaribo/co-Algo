@@ -79,6 +79,5 @@ Notice that the worker with index 3 was common in the first and last four worker
 - [17,12,10,7,11,20,8]
 
 
-
 ## 링크 
 https://leetcode.com/problems/total-cost-to-hire-k-workers/submissions/1632396350
