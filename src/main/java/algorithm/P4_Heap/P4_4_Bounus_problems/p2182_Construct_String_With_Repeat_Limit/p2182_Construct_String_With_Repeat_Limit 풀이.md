@@ -1,4 +1,4 @@
-# 문제 (회고 필수)
+# 문제 (회고 필수, 속도 개선 필요)
 
 ~~~text
 “주어진 문자열 s와 정수 repeatLimit가 있을 때, s의 문자들을 사용하여 repeatLimitedString이라는 새 문자열을 생성합니다. 
@@ -103,6 +103,11 @@ Note that the string "bbabaaa" is lexicographically larger but the letter 'a' ap
       2. left > 0
          1. 두번째로 늦은 수를 하나만 더 해준다
          2. 뺄셈이후로 두번쨰 수가 남아있다면 다시 넣어준다
+
+### 속도가 너무 안나오는데 개선 할 방법(회고중)
+- TreeMap을 사용해볼까
+- map.tailMap(maxChar, false).navigableKeySet();
+- 정렬이 필요하다면 heap말고 트리 맵으로 다시 도전해 보는것도 괜찮을지도, 어차피 같은 트리긴하니깐
 
 
 ## 링크
