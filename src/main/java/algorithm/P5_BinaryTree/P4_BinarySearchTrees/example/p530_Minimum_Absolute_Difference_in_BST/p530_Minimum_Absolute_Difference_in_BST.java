@@ -1,0 +1,4 @@
+package algorithm.P5_BinaryTree.P4_BinarySearchTrees.example.p530_Minimum_Absolute_Difference_in_BST;
+
+public class p530_Minimum_Absolute_Difference_in_BST {
+}

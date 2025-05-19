@@ -1,0 +1,4 @@
+package algorithm.P5_BinaryTree.P2_DFS.pratice.p1026_Maximum_Difference_Between_Node_and_Ancestor;
+
+public class p1026_Maximum_Difference_Between_Node_and_Ancestor {
+}

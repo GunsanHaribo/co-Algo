@@ -1,0 +1,4 @@
+package algorithm.P5_BinaryTree.P4_BinarySearchTrees.pratice.p701_Insert_into_a_Binary_Search_Tree;
+
+public class p701_Insert_into_a_Binary_Search_Tree {
+}
