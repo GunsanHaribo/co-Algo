@@ -1,4 +1,4 @@
-package algorithm.P5_BinaryTree.P2_DFS.example;
+package algorithm.P5_BinaryTree.P1_Tree_Maker;
 
 public class TreeNode {
 
@@ -21,11 +21,7 @@ public class TreeNode {
 
     @Override
     public String toString() {
-        return "TreeNode{" +
-                "val=" + val +
-                ", left=" + left +
-                ", right=" + right +
-                '}';
+        return val + "";
     }
 
 }
