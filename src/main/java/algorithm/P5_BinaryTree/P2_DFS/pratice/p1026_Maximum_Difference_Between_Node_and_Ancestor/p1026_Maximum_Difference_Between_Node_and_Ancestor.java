@@ -1,12 +1,13 @@
 package algorithm.P5_BinaryTree.P2_DFS.pratice.p1026_Maximum_Difference_Between_Node_and_Ancestor;
 
-import algorithm.P5_BinaryTree.P2_DFS.example.TreeNode;
+import algorithm.P5_BinaryTree.P1_Tree_Maker.TreeNode;
 
 public class p1026_Maximum_Difference_Between_Node_and_Ancestor {
 
     public static void main(String[] args) {
 //        root = [8,3,10,1,6,null,14,null,null,4,7,13]
-// 노드의 값들이 변경되어야함
+
+
     }
 
     public int maxAncestorDiff(TreeNode root) {

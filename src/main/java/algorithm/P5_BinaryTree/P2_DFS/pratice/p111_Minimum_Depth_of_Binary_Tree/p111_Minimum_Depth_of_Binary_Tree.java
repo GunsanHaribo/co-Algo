@@ -1,6 +1,6 @@
 package algorithm.P5_BinaryTree.P2_DFS.pratice.p111_Minimum_Depth_of_Binary_Tree;
 
-import algorithm.P5_BinaryTree.P2_DFS.example.TreeNode;
+import algorithm.P5_BinaryTree.P1_Tree_Maker.TreeNode;
 
 public class p111_Minimum_Depth_of_Binary_Tree {
 

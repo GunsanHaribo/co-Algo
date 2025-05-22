@@ -1,6 +1,6 @@
 package algorithm.P5_BinaryTree.P2_DFS.example.p112_Path_Sum;
 
-import algorithm.P5_BinaryTree.P2_DFS.example.TreeNode;
+import algorithm.P5_BinaryTree.P1_Tree_Maker.TreeNode;
 
 public class p112_Path_Sum {
 
