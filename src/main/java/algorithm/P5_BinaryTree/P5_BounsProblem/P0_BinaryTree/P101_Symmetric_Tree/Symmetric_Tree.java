@@ -1,4 +1,4 @@
-package algorithm.P5_BinaryTree.P5_BounsProblem.P101_Symmetric_Tree;
+package algorithm.P5_BinaryTree.P5_BounsProblem.P0_BinaryTree.P101_Symmetric_Tree;
 
 import algorithm.P5_BinaryTree.P1_Tree_Maker.TreeNode;
 
