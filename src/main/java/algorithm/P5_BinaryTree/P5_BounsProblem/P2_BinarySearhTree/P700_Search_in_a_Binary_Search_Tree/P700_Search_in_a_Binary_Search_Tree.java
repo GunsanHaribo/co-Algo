@@ -1,0 +1,4 @@
+package algorithm.P5_BinaryTree.P5_BounsProblem.P2_BinarySearhTree.P700_Search_in_a_Binary_Search_Tree;
+
+public class P700_Search_in_a_Binary_Search_Tree {
+}
