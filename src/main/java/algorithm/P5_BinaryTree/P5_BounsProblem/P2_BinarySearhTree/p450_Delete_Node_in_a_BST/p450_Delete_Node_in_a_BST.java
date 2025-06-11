@@ -17,12 +17,14 @@ public class p450_Delete_Node_in_a_BST {
         if (root == null) {
             return null;
         }
-        // 허허...
-        if (root.right == null && root.val == key) {
-            root = root.right;
+
+        if (root.left != null && root.right == null && root.val == key) {
+            // -> 이것도 어떻게 할건데
+            root = root.left;
         }
 
         if (root.right != null && root.val == key) {
+            // -> 이거 어떻게 할건데
             root = root.right;
         }
 
