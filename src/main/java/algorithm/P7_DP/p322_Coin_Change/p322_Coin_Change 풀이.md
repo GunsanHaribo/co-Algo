@@ -30,6 +30,7 @@ Explanation: 11 = 5 + 5 + 1
 1. 남은 수로 해야되는게 맞고 음수나 0이면 종료 하거나 
 2. 6, 9, 10 중 최소 갯수를 가지고 있으면 저장한다.
 - 최소할떈 maxValue 조심 
+- 재귀를 우선 하고 DP로 바꿔야함
 
 # 링크
 int subResult = coinChange(coins, amount - coin); -> 이부분이 이렇게 해도 될까가 있었네 
