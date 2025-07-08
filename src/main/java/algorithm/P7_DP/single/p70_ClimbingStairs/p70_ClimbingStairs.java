@@ -1,4 +1,4 @@
-package algorithm.P7_DP.p70_ClimbingStairs;
+package algorithm.P7_DP.single.p70_ClimbingStairs;
 
 import java.util.HashMap;
 import java.util.Map;

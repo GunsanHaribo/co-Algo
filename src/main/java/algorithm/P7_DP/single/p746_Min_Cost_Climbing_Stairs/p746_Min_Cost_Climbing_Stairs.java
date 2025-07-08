@@ -1,4 +1,4 @@
-package algorithm.P7_DP.p746_Min_Cost_Climbing_Stairs;
+package algorithm.P7_DP.single.p746_Min_Cost_Climbing_Stairs;
 
 import java.util.HashMap;
 import java.util.Map;
