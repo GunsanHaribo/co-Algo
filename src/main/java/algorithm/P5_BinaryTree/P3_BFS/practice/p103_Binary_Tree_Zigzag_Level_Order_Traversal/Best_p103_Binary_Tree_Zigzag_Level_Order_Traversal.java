@@ -2,18 +2,16 @@ package algorithm.P5_BinaryTree.P3_BFS.practice.p103_Binary_Tree_Zigzag_Level_Or
 
 import algorithm.P5_BinaryTree.P1_Tree_Maker.TreeHelper;
 import algorithm.P5_BinaryTree.P1_Tree_Maker.TreeNode;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
-import java.util.*;
-
-public class p103_Binary_Tree_Zigzag_Level_Order_Traversal {
+public class Best_p103_Binary_Tree_Zigzag_Level_Order_Traversal {
 
   public static void main(String[] args) {
-    p103_Binary_Tree_Zigzag_Level_Order_Traversal solver = new p103_Binary_Tree_Zigzag_Level_Order_Traversal();
-//    TreeNode root = TreeHelper.buildTree(new Integer[]{3, 9, 20, null, null, 15, 7});
-//    TreeNode root = TreeHelper.buildTree(new Integer[]{1, 2, 3, 4, null, null, 5});
-    TreeNode root = TreeHelper.buildTree(
-        new Integer[]{0, 2, 4, 1, null, 3, -1, 5, 1, null, 6, null, 8}
-    );
+    Best_p103_Binary_Tree_Zigzag_Level_Order_Traversal solver = new Best_p103_Binary_Tree_Zigzag_Level_Order_Traversal();
+    TreeNode root = TreeHelper.buildTree(new Integer[]{3, 9, 20, null, null, 15, 7});
     System.out.println(solver.zigzagLevelOrder(root));
   }
 
@@ -28,11 +26,18 @@ public class p103_Binary_Tree_Zigzag_Level_Order_Traversal {
     List<List<Integer>> results = new ArrayList<>();
     while (!queue.isEmpty()) {
       int rowSize = queue.size();
+      LinkedList<Integer> rowNodeValues = new LinkedList<>();
 
-      List<Integer> rowNodeValues = new ArrayList<>();
       for (int i = 0; i < rowSize; i++) {
         TreeNode polled = queue.poll();
-        rowNodeValues.add(polled.val);
+
+        if(rightFirst){
+          rowNodeValues.addFirst(polled.val);
+        }
+        if(!rightFirst){
+          rowNodeValues.addLast(polled.val);
+        }
+
 
         if (polled.left != null) {
           queue.add(polled.left);
@@ -42,22 +47,12 @@ public class p103_Binary_Tree_Zigzag_Level_Order_Traversal {
         }
       }
 
-      List<Integer> temp = new ArrayList<>();
-      if (rightFirst) {
-        for (int i = rowNodeValues.size() - 1; i >= 0; i--) {
-          temp.add(rowNodeValues.get(i));
-        }
-//        rowNodeValues = rowNodeValues.stream()
-//            .sorted(Comparator.reverseOrder())
-//            .toList();
-      }else {
-        temp = rowNodeValues;
-      }
-      results.add(temp);
+      results.add(rowNodeValues);
       rightFirst = !rightFirst;
     }
 
     return results;
   }
+
 
 }
