@@ -60,5 +60,5 @@ Collections.reverse(reversed);
 ---
 
 첫번쨰 : https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/submissions/1759961660
-개선 : 
+개선(크게 다른건 없음) : https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/submissions/1760058102
 
