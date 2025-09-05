@@ -6,14 +6,14 @@ import java.util.*;
 
 public class p103_Binary_Tree_Zigzag_Level_Order_Traversal {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-    }
+  }
 
-    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-        List<List<Integer>> results = new ArrayList<>();
+  public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+    List<List<Integer>> results = new ArrayList<>();
 
-        return results;
-    }
+    return results;
+  }
 
 }
