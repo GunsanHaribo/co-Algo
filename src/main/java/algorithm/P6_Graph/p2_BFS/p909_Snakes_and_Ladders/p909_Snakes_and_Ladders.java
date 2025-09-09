@@ -1,4 +1,4 @@
-package algorithm.P6_Graph.BFS.p909_Snakes_and_Ladders;
+package algorithm.P6_Graph.p2_BFS.p909_Snakes_and_Ladders;
 
 import java.util.LinkedList;
 import java.util.Queue;

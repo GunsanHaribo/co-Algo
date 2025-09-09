@@ -1,4 +1,4 @@
-package algorithm.P6_Graph.DFS.p2368_Reachable_Nodes_With_Restrictions;
+package algorithm.P6_Graph.p1_DFS.practice.p2368_Reachable_Nodes_With_Restrictions;
 
 import java.util.ArrayList;
 import java.util.HashMap;

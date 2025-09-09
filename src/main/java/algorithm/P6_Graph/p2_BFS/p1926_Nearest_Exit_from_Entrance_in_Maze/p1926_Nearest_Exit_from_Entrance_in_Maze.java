@@ -1,4 +1,4 @@
-package algorithm.P6_Graph.BFS.p1926_Nearest_Exit_from_Entrance_in_Maze;
+package algorithm.P6_Graph.p2_BFS.p1926_Nearest_Exit_from_Entrance_in_Maze;
 
 import java.util.LinkedList;
 import java.util.Queue;
