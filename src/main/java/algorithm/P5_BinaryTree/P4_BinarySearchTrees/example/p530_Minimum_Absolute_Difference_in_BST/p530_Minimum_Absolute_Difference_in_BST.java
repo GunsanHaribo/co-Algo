@@ -10,7 +10,8 @@ public class p530_Minimum_Absolute_Difference_in_BST {
 //    TreeNode root = TreeHelper.buildTree(new Integer[]{4, 2, 6, 1, 3});
 //    TreeNode root = TreeHelper.buildTree(new Integer[]{1, 0, 48, null, null, 12, 49});
 //    TreeNode root = TreeHelper.buildTree(new Integer[]{1, null, 3, 2});
-    TreeNode root = TreeHelper.buildTree(new Integer[]{236, 104, 701, null, 227, null, 9112});
+//    TreeNode root = TreeHelper.buildTree(new Integer[]{236, 104, 701, null, 227, null, 9112});
+    TreeNode root = TreeHelper.buildTree(new Integer[]{600, 424, 612, null, 499, null, 689});
 
     System.out.println(solver.getMinimumDifference(root));
   }
@@ -20,21 +21,31 @@ public class p530_Minimum_Absolute_Difference_in_BST {
       return Integer.MAX_VALUE;
     }
 
-    int a = root.val - findRightest(root.left);
-    int b = findLeftest(root.right) - (root.val); // null일떄 흐음.. 이걸 어떻게하지?
+    Integer leftNodeRightest = findRightest(root.left);
+    if (leftNodeRightest != null) {
+      leftNodeRightest = Math.abs(root.val - leftNodeRightest);
+    } else {
+      leftNodeRightest = Integer.MAX_VALUE;
+    }
+    Integer rightNodeLeftest = findLeftest(root.right);
+    if (rightNodeLeftest != null) {
+      rightNodeLeftest = Math.abs(findLeftest(root.right) - (root.val));
+    } else {
+      rightNodeLeftest = Integer.MAX_VALUE;
+    }
+
     int currentMin = Math.min(
-        a, // 여기서 나오는것 같은데
-        b
+        leftNodeRightest,
+        rightNodeLeftest
     );
     int childMinDiff = Math.min(getMinimumDifference(root.left), getMinimumDifference(root.right));
 
     return Math.min(currentMin, childMinDiff);
   }
 
-  public int findRightest(TreeNode node) {
-    // null 일떄 안넣어주면 안되나?
-    if (node.right == null && node.left != null) {
-      return node.val; // 부모에서 왼쪽이 null이면 부모반환
+  public Integer findRightest(TreeNode node) {
+    if (node == null) {
+      return null;
     }
     if (node.right == null && node.left == null) {
       return node.val;
@@ -43,19 +54,18 @@ public class p530_Minimum_Absolute_Difference_in_BST {
     return findRightest(node.right);
   }
 
-  public int findLeftest(TreeNode node) {
-    if (node.left == null && node.right != null) {
-      return node.val; // 부모에서 왼쪽이 null이면 부모반환
+  public Integer findLeftest(TreeNode node) {
+    if (node == null) {
+      return null;
     }
     if (node.right == null && node.left == null) {
-      return node.val; // 끝까지 들어가서 뭐가 없을때는 자기자신 반환
+      return node.val;
     }
 
     return findLeftest(node.left);
   }
 
-  /////////////////////////
-  /////////////////////////
+  // TODO: 9/9/25 이건 이전것
   public int getMinimumDifference_failed(TreeNode root) {
     if (root == null) {
       return Integer.MAX_VALUE; // 이것도 살짝.. 문제가 될수도
