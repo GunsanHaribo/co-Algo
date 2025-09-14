@@ -10,8 +10,8 @@ public class Re_p270_Closest_Binary_Search_Tree_Value {
 //    TreeNode root = TreeHelper.buildTree(new Integer[]{4, 2, 5, 1, 3});
 //    double target = 3.714286;
 
-    TreeNode root = TreeHelper.buildTree(new Integer[]{1});
-    double target = 4.428571;
+    TreeNode root = TreeHelper.buildTree(new Integer[]{8, 7, 50, null, null, 9, null});
+    double target = 9.1;
 
     System.out.println(solver.findNearestNode(root, target));
   }

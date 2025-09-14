@@ -5,10 +5,10 @@ import algorithm.P5_BinaryTree.P1_Tree_Maker.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class p270_Closest_Binary_Search_Tree_Value {
+public class Worst_p270_Closest_Binary_Search_Tree_Value {
 
   public static void main(String[] args) {
-    p270_Closest_Binary_Search_Tree_Value solver = new p270_Closest_Binary_Search_Tree_Value();
+    Worst_p270_Closest_Binary_Search_Tree_Value solver = new Worst_p270_Closest_Binary_Search_Tree_Value();
     TreeNode root = TreeHelper.buildTree(new Integer[]{4, 2, 5, 1, 3});
     double target = 3.714286;
 
