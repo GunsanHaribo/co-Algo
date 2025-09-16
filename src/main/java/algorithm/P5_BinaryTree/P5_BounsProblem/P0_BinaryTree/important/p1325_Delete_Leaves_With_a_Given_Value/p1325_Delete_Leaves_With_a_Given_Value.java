@@ -1,4 +1,4 @@
-package algorithm.P5_BinaryTree.P5_BounsProblem.important.p1325_Delete_Leaves_With_a_Given_Value;
+package algorithm.P5_BinaryTree.P5_BounsProblem.P0_BinaryTree.important.p1325_Delete_Leaves_With_a_Given_Value;
 
 import algorithm.P5_BinaryTree.P1_Tree_Maker.TreeNode;
 

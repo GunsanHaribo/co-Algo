@@ -1,4 +1,4 @@
-package algorithm.P5_BinaryTree.P5_BounsProblem.important.p872_Leaf_Similar_Trees.retry;
+package algorithm.P5_BinaryTree.P5_BounsProblem.P0_BinaryTree.important.p872_Leaf_Similar_Trees.retry;
 
 import algorithm.P5_BinaryTree.P1_Tree_Maker.TreeHelper;
 import algorithm.P5_BinaryTree.P1_Tree_Maker.TreeNode;

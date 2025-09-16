@@ -1,4 +1,4 @@
-package algorithm.P5_BinaryTree.P5_BounsProblem.important.p872_Leaf_Similar_Trees;
+package algorithm.P5_BinaryTree.P5_BounsProblem.P0_BinaryTree.important.p872_Leaf_Similar_Trees;
 
 import algorithm.P5_BinaryTree.P1_Tree_Maker.TreeNode;
 
