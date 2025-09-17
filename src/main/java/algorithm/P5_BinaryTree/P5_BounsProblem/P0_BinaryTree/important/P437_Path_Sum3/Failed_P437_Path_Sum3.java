@@ -31,18 +31,18 @@ public class Failed_P437_Path_Sum3 {
 //        0, 1, 1
 //    });
 //    int targetSum = 1;
-//    TreeNode root = TreeHelper.buildTree(new Integer[]{
-//        10, 5, -3, 3, 2, null, 11, 3, -2, null, 1
-//    });
-//    int targetSum = 8;
+    TreeNode root = TreeHelper.buildTree(new Integer[]{
+        10, 5, -3, 3, 2, null, 11, 3, -2, null, 1
+    });
+    int targetSum = 8;
 //    TreeNode root = TreeHelper.buildTree(new Integer[]{
 //        1, 2
 //    });
 //    int targetSum = 2;
-    TreeNode root = TreeHelper.buildTree(new Integer[]{
-        0,1,1
-    });
-    int targetSum = 0;
+//    TreeNode root = TreeHelper.buildTree(new Integer[]{
+//        0, 1, 1
+//    });
+//    int targetSum = 0;
 
 //    TreeNode root = TreeHelper.buildTree(new Integer[]{
 //        1, -2, -3, 1, 3, -2, null, -1
@@ -63,13 +63,13 @@ public class Failed_P437_Path_Sum3 {
     if (root == null) {
       return;
     }
-    if(currentSum == targetSum){
-      totalCount += 1;
-    }
 
+    // 큐에 투가하는로직
     Queue<Integer> newQueue = new LinkedList<>(queue);
     newQueue.add(root.val);
     int nextSum = currentSum + root.val;
+
+    // targetSum과 같은 숫자가 들어왔을때 위에걸 날려주는로직 -> 이게 왜있는거지
     if (targetSum == root.val) {
       if (nextSum == targetSum) {
         totalCount += 1;
@@ -78,21 +78,25 @@ public class Failed_P437_Path_Sum3 {
         Integer poll = newQueue.poll();
         nextSum -= poll;
         if (nextSum == targetSum && targetSum != 0) {
-          totalCount += 1; // 2 + 2 가 나와야 하지않나?, 왜여기서 +1 안되지, 여기서 틀
+          totalCount += 1;
         }
       }
     }
 
-
+    //  nextSum이 targetSum일떄 count++, 밑에서는 안하고 들어오면 진행
     if (nextSum == targetSum && targetSum != 0) {
       totalCount += 1;
     }
+
+    // targetSum이 양수면 내려가면서, 합이 특정수보다 크면 먼저들어간 수를 뺴줍니다.
     if (targetSum > 0 && nextSum > targetSum) {
       while (nextSum > targetSum) {
         Integer poll = newQueue.poll();
         nextSum -= poll;
       }
     }
+
+    // targetSum이 음수면 내려가면서, 합이 특성 수보다 작으면 뺴줍니다.
     if (targetSum < 0 && nextSum < targetSum) {
       while (nextSum < targetSum) {
         Integer poll = newQueue.poll();
@@ -100,9 +104,7 @@ public class Failed_P437_Path_Sum3 {
       }
     }
 
-    // 뺴줬을때 같으면 어떻게 하게, 근데 이게 말이되나, 이전것들은 다 작았는데, 생각해보면 가능할 것 같기도하고, 가능한 이야기인데
-
-
+    // 다음 진행
     dfs(root.left, targetSum, nextSum, newQueue);
     dfs(root.right, targetSum, nextSum, newQueue);
   }
