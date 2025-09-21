@@ -1,4 +1,4 @@
-package algorithm.P6_Graph.라이브코딩테스트;
+package algorithm.P4_Heap.라이브코딩테스트;
 
 import java.util.List;
 import java.util.PriorityQueue;
