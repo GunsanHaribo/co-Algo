@@ -1,0 +1,5 @@
+package algorithm.P6_Graph.p1_DFS.example.p1557_Minimum_Number_of_Vertices_to_Reach_All_Nodes;
+
+public class p1557_Minimum_Number_of_Vertices_to_Reach_All_Nodes {
+
+}
