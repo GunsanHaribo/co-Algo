@@ -1,4 +1,4 @@
-package algorithm.P6_Graph.p1_DFS.example.p841_Keys_and_Rooms.t2025_10_12;
+package algorithm.P6_Graph.p1_DFS.a_important.p841_Keys_and_Rooms.t2025_10_12;
 
 import java.util.Arrays;
 import java.util.List;
