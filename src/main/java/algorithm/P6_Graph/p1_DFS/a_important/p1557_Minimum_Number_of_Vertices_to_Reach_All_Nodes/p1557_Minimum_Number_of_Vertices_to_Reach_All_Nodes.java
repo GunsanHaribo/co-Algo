@@ -50,7 +50,6 @@ public class p1557_Minimum_Number_of_Vertices_to_Reach_All_Nodes {
       Integer startNode = edge.get(0);
       Integer endNode = edge.get(1);
 
-      // 이거 computeIfAbsent 이런걸로 바꿔야함
       HashSet<Integer> orDefault = nearList.getOrDefault(startNode, new HashSet<>());
       orDefault.add(endNode);
       nearList.put(startNode, orDefault);
@@ -118,7 +117,6 @@ public class p1557_Minimum_Number_of_Vertices_to_Reach_All_Nodes {
 
   public void dfs(int node, Map<Integer, HashSet<Integer>> nearList) {
     seen[node] = true;
-    // 자기자신을 포함을 안시킨다거나... 그런거 해줘야 될듯
 
     HashSet<Integer> integers = nearList.get(node);
     if (integers == null) {
