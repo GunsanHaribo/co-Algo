@@ -1,4 +1,4 @@
-package algorithm.P5_BinaryTree.P5_BounsProblem.P0_BinaryTree.important.p1372_Longest_ZigZag_Path_in_a_Binary_Tree;
+package algorithm.P5_BinaryTree.P5_BounsProblem.P0_BinaryTree.important.P1_very.p1372_Longest_ZigZag_Path_in_a_Binary_Tree;
 
 import algorithm.P5_BinaryTree.P1_Tree_Maker.TreeNode;
 

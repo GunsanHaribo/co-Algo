@@ -1,21 +1,21 @@
-package algorithm.P5_BinaryTree.P5_BounsProblem.P0_BinaryTree.important.p1372_Longest_ZigZag_Path_in_a_Binary_Tree.retry;
+package algorithm.P5_BinaryTree.P5_BounsProblem.P0_BinaryTree.important.P1_very.p1372_Longest_ZigZag_Path_in_a_Binary_Tree.retry;
 
 import algorithm.P5_BinaryTree.P1_Tree_Maker.TreeHelper;
 import algorithm.P5_BinaryTree.P1_Tree_Maker.TreeNode;
 
-public class TimeLimit_p1372_Longest_ZigZag_Path_in_a_Binary_Tree {
+public class Best_p1372_Longest_ZigZag_Path_in_a_Binary_Tree {
 
   public static void main(String[] args) {
-    TimeLimit_p1372_Longest_ZigZag_Path_in_a_Binary_Tree solver = new TimeLimit_p1372_Longest_ZigZag_Path_in_a_Binary_Tree();
-//    TreeNode root = TreeHelper.buildTree(new Integer[]{
-//        1, null, 1, 1, 1, null, null, 1, 1, null, 1, null, null, null, 1
-//    });
+    Best_p1372_Longest_ZigZag_Path_in_a_Binary_Tree solver = new Best_p1372_Longest_ZigZag_Path_in_a_Binary_Tree();
+    TreeNode root = TreeHelper.buildTree(new Integer[]{
+        1, null, 1, 1, 1, null, null, 1, 1, null, 1, null, null, null, 1
+    });
 //    TreeNode root = TreeHelper.buildTree(new Integer[]{
 //        1, 1, 1, null, 1, null, 1, 1, null, 1, 1, null, 1
 //    });
-    TreeNode root = TreeHelper.buildTree(new Integer[]{
-        1
-    });
+//    TreeNode root = TreeHelper.buildTree(new Integer[]{
+//        1
+//    });
 
     System.out.println(solver.longestZigZag(root));
   }
