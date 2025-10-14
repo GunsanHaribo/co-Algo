@@ -1,5 +1,0 @@
-package algorithm.P6_Graph.p2_BFS.p1293_Shortest_Path_in_a_Grid_with_Obstacles_Elimination;
-
-public class p1293_Shortest_Path_in_a_Grid_with_Obstacles_Elimination {
-
-}

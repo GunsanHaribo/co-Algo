@@ -1,4 +1,4 @@
-package algorithm.P6_Graph.p2_BFS.p1091_Shortest_Path_in_Binary_Matrix.t2025_10_14;
+package algorithm.P6_Graph.p2_BFS.aimportant.p1091_Shortest_Path_in_Binary_Matrix.t2025_10_14;
 
 import java.util.LinkedList;
 import java.util.Queue;
