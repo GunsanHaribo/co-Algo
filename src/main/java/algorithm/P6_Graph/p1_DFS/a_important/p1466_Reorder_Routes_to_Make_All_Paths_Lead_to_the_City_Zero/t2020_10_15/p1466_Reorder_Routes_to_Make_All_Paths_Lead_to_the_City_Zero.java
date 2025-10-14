@@ -1,5 +1,0 @@
-package algorithm.P6_Graph.p1_DFS.a_important.p1466_Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero.t2020_10_15;
-
-public class p1466_Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero {
-
-}
