@@ -1,4 +1,0 @@
-package algorithm.leetCode_1회독중.P4_Heap.P4_4_Bounus_problems.p632_Smallest_Range_Covering_Elements_from_K_Lists_Hard;
-
-public class p632_Smallest_Range_Covering_Elements_from_K_Lists_Hard {
-}

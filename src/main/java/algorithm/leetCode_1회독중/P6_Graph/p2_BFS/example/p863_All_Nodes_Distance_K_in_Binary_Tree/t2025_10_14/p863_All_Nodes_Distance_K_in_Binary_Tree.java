@@ -1,7 +1,7 @@
 package algorithm.leetCode_1회독중.P6_Graph.p2_BFS.example.p863_All_Nodes_Distance_K_in_Binary_Tree.t2025_10_14;
 
-import algorithm.leetCode_1회독중.P5_BinaryTree.P1_Tree_Maker.TreeHelper;
-import algorithm.leetCode_1회독중.P5_BinaryTree.P1_Tree_Maker.TreeNode;
+import algorithm.leetCode_1회독중.P5_BinaryTree.p1_Tree_Maker.TreeHelper;
+import algorithm.leetCode_1회독중.P5_BinaryTree.p1_Tree_Maker.TreeNode;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
