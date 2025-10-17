@@ -1,4 +1,4 @@
-package algorithm.leetCode_1회독중.P7_DP.p1_1D_problems.practice.p70_ClimbingStairs;
+package algorithm.leetCode_1회독중.P7_DP.p1_1D_problems.practice.p70_ClimbingStairs.t2025_7_10;
 
 import java.util.HashMap;
 import java.util.Map;
