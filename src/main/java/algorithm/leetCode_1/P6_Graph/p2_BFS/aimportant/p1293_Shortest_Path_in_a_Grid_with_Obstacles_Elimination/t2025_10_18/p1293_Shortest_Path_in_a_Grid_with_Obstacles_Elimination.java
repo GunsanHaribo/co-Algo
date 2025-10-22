@@ -8,14 +8,14 @@ public class p1293_Shortest_Path_in_a_Grid_with_Obstacles_Elimination {
 
   public static void main(String[] args) {
     p1293_Shortest_Path_in_a_Grid_with_Obstacles_Elimination solver = new p1293_Shortest_Path_in_a_Grid_with_Obstacles_Elimination();
-//    int[][] grid = {
-//        {0, 0, 0},
-//        {1, 1, 0},
-//        {0, 0, 0},
-//        {0, 1, 1},
-//        {0, 0, 0}
-//    };
-//    int k = 1;
+    int[][] grid = {
+        {0, 0, 0},
+        {1, 1, 0},
+        {0, 0, 0},
+        {0, 1, 1},
+        {0, 0, 0}
+    };
+    int k = 1;
 
 //    int[][] grid = {
 //        {0, 1, 1},
@@ -23,26 +23,33 @@ public class p1293_Shortest_Path_in_a_Grid_with_Obstacles_Elimination {
 //        {1, 0, 0}
 //    };
 //    int k = 1;
-
-    int[][] grid = {
-        {0, 0},
-        {1, 0},
-        {1, 0},
-        {1, 0},
-        {1, 0},
-        {1, 0},
-
-        {0, 0},
-        {0, 1},
-        {0, 1},
-        {0, 1},
-
-        {0, 0},
-        {1, 0},
-        {1, 0},
-        {0, 0}
-    };
-    int k = 4; // 나와야되는값은 14
+//
+//    int[][] grid = {
+//        {0, 0},
+//        {1, 0},
+//        {1, 0},
+//        {1, 0},
+//        {1, 0},
+//        {1, 0},
+//
+//        {0, 0},
+//        {0, 1},
+//        {0, 1},
+//        {0, 1},
+//
+//        {0, 0},
+//        {1, 0},
+//        {1, 0},
+//        {0, 0}
+//    };
+//    int k = 4; // 나와야되는값은 14
+//
+//    int[][] grid = {
+//        {0, 1, 0, 0, 0, 1, 0, 0},
+//        {0, 1, 0, 1, 0, 1, 0, 1},
+//        {0, 0, 0, 1, 0, 0, 1, 0}
+//    };
+//    int k = 1; // 답은 13
 
     System.out.println(solver.shortestPath(grid, k));
   }
@@ -59,40 +66,43 @@ public class p1293_Shortest_Path_in_a_Grid_with_Obstacles_Elimination {
   public int shortestPath(int[][] grid, int k) {
     int m = grid.length;
     int n = grid[0].length;
-    boolean[][] seen = new boolean[m][n];
+    int[][] seen = new int[m][n];
+    for (int[] row : seen) {
+      Arrays.fill(row, Integer.MAX_VALUE);
+    }
     int[][] answer = new int[m][n];
     for (int[] row : answer) {
       Arrays.fill(row, -1);
     }
 
+    // PQ는 쓰면 같은 레벨의 state들이 전부 다 안뽑히고 우선 순위에따라서 레벨이 밀래
     Queue<State> queue = new LinkedList<>();
     queue.add(new State(0, 0, 0, 0));
-    seen[0][0] = true;
+    seen[0][0] = 0;
 
     while (!queue.isEmpty()) {
       // 같은 계층에 있는거 다뽑아줘야함 -> 이걸 까먹었네;;
       int size = queue.size();
+
       for (int i = 0; i < size; i++) {
         State poll = queue.poll();
-        // -1이면 그냥 넣고
-        // -1이 아니라면 최소값만 넣는다.
+        // 여기서 뒤에 들어오는거 말고, 최솟값을 한번 더 건다면?
         if (answer[poll.y][poll.x] == -1) {
           answer[poll.y][poll.x] = poll.count;
         } else {
-          answer[poll.y][poll.x] = Math.min(poll.count, answer[poll.y][poll.x]);
+          answer[poll.y][poll.x] = Math.min(answer[poll.y][poll.x], poll.count);
         }
 
         for (int[] dydx : dydxs) {
           int newY = poll.y + dydx[0];
           int newX = poll.x + dydx[1];
-          if (validateBond(newY, newX, m, n) || seen[newY][newX]) {
+          if (validateBond(newY, newX, m, n)) {
             continue;
           }
-
-//          seen[newY][newX] = true;
-          if (grid[poll.y][poll.x] == 0) {
-            seen[newY][newX] = true;
+          if (seen[newY][newX] <= poll.k) {
+            continue;
           }
+          seen[newY][newX] = poll.k;
 
           // 벽에 도착했을떄, k가 남아있으면 치워보고 안남아있으면 계속 가져간다.
           if (grid[newY][newX] == 1) {
