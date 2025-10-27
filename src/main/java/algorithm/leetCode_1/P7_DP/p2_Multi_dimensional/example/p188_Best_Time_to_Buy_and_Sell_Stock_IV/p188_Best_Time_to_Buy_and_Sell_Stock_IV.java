@@ -1,4 +1,4 @@
-package algorithm.leetCode_1.P7_DP.p2_d2.example.p188_Best_Time_to_Buy_and_Sell_Stock_IV;
+package algorithm.leetCode_1.P7_DP.p2_Multi_dimensional.example.p188_Best_Time_to_Buy_and_Sell_Stock_IV;
 
 public class p188_Best_Time_to_Buy_and_Sell_Stock_IV {
 

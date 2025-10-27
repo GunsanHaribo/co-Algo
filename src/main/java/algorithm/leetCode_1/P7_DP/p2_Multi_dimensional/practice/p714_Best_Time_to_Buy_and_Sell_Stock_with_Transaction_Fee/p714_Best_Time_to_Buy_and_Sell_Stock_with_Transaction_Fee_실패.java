@@ -1,4 +1,4 @@
-package algorithm.leetCode_1.P7_DP.p2_d2.practice.p714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee;
+package algorithm.leetCode_1.P7_DP.p2_Multi_dimensional.practice.p714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee;
 
 public class p714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee_실패 {
 

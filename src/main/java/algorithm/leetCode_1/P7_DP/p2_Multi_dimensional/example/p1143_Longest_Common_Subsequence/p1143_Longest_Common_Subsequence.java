@@ -1,4 +1,4 @@
-package algorithm.leetCode_1.P7_DP.p2_d2.example.p1143_Longest_Common_Subsequence;
+package algorithm.leetCode_1.P7_DP.p2_Multi_dimensional.example.p1143_Longest_Common_Subsequence;
 
 import java.util.Arrays;
 

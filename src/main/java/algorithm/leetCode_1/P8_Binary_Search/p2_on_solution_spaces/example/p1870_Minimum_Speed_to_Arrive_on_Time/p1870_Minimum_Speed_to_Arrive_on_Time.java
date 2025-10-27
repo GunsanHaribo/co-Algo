@@ -1,0 +1,5 @@
+package algorithm.leetCode_1.P8_Binary_Search.p2_on_solution_spaces.example.p1870_Minimum_Speed_to_Arrive_on_Time;
+
+public class p1870_Minimum_Speed_to_Arrive_on_Time {
+
+}
