@@ -1,4 +1,4 @@
-package algorithm.leetCode_1.P5_BinaryTree.p5_BounsProblem.P0_BinaryTree.important.P1_very.p1372_Longest_ZigZag_Path_in_a_Binary_Tree.retry;
+package algorithm.leetCode_1.P5_BinaryTree.p5_BounsProblem.P0_BinaryTree.important.P1_very.firstP1372_Longest_ZigZag_Path_in_a_Binary_Tree.retry;
 
 import algorithm.leetCode_1.P5_BinaryTree.p1_Tree_Maker.TreeHelper;
 import algorithm.leetCode_1.P5_BinaryTree.p1_Tree_Maker.TreeNode;
