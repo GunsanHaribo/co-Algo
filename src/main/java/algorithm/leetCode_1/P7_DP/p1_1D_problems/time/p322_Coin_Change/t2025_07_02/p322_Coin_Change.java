@@ -1,4 +1,4 @@
-package algorithm.leetCode_1.P7_DP.p1_1D_problems.practice.p322_Coin_Change.t2025_07_02;
+package algorithm.leetCode_1.P7_DP.p1_1D_problems.time.p322_Coin_Change.t2025_07_02;
 
 import java.util.HashMap;
 import java.util.Map;

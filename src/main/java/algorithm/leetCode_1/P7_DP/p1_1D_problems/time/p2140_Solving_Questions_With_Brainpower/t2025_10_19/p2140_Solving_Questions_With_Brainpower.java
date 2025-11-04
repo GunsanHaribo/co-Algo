@@ -1,4 +1,4 @@
-package algorithm.leetCode_1.P7_DP.p1_1D_problems.example.p2140_Solving_Questions_With_Brainpower.t2025_10_19;
+package algorithm.leetCode_1.P7_DP.p1_1D_problems.time.p2140_Solving_Questions_With_Brainpower.t2025_10_19;
 
 public class p2140_Solving_Questions_With_Brainpower {
 
