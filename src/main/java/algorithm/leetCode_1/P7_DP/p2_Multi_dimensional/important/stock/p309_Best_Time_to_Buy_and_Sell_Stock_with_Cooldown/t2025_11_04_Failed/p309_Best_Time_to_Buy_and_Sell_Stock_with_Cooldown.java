@@ -1,4 +1,4 @@
-package algorithm.leetCode_1.P7_DP.p2_Multi_dimensional.important.stock.p309_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown.t2025_11_04;
+package algorithm.leetCode_1.P7_DP.p2_Multi_dimensional.important.stock.p309_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown.t2025_11_04_Failed;
 
 import java.util.ArrayList;
 import java.util.List;
