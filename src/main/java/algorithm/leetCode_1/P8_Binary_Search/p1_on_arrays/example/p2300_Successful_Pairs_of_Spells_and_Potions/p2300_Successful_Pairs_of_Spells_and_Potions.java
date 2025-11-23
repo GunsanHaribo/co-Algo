@@ -18,29 +18,23 @@ public class p2300_Successful_Pairs_of_Spells_and_Potions {
   }
 
   public int[] successfulPairs(int[] spells, int[] potions, long success) {
-    int[][] matrix = new int[spells.length][potions.length];
     Arrays.sort(potions);
-    for (int y = 0; y < spells.length; y++) {
-      for (int x = 0; x < potions.length; x++) {
-        matrix[y][x] = spells[y] * potions[x];
-      }
-    }
 
     int[] answer = new int[spells.length];
-    for (int i = 0; i < matrix.length; i++) {
+    for (int y = 0; y < spells.length; y++) {
       int left = 0;
-      int right = matrix[i].length;
-      int savedMid = 0;
+      int right = potions.length;
+      int newSuccess = (int) Math.ceil((double) success / spells[y]);
+
       while (left < right) {
         int mid = left + (right - left) / 2;
-        savedMid = mid;
-        if (matrix[i][mid] < success) {
+        if (potions[mid] < newSuccess) {
           left = mid + 1;
         } else {
           right = mid;
         }
       }
-      answer[i] = Math.max(matrix[i].length - savedMid - 1, answer[i]);
+      answer[y] = potions.length - right;
     }
 
     return answer;
